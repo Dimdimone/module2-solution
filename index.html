@@ -1,19 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coursera test</title>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coursera test </title>
+<style>
+    * {
+     box-sizing: border-box; /* параметр который включает паддинги в ширину*/
+    }
+    body {
+     margin: 0;
+     padding: 10px;
+    }
+	h1{
+		text-align: center;
+	}
+	h2{
+		text-align: center;
+		float: right;
+		background-color: red;
+		margin-top: -10px;
+		margin-right: -10px;
+		width: 85px;
+		border: 2px solid black;
+	}
+    .Chiken{
+    	background-color: #BC8F8F;
+    }
+   .beef{
+   	color: white;
+   	background-color: #A52A2A;
+   }
+   .Sushi{
+   	background-color: #FFD700;
+   }
+   .layout { 
+    overflow: hidden;
+    /* Отмена обтекания */
+   }
+   .col {
+    width: 33.33%; /* Ширина колонок */
+    float: left; /* Создаем колонки */ 
+   }
+   .layout div div { /* Такой селектор лучше не писать, если поменяем структуру, то сразу все валится */
+   }
+
+   .card {
+     margin: 10px; /* Отступы */
+     padding: 10px; /* Поля */
+     height: 190px; /* Высота колонок */
+     background: #808080; /* Цвет фона */
+     color: #000000; /* Цвет текста */
+     overflow: auto;
+     border: 2px solid black;
+   }
+
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+   float: left;
+  }
+
+ .card {
+  border: 1px solid green;
+ }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: ) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: none;
+  }
+  .card {
+   border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 20%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 990px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .card {
+   border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 20%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+
+
+
+
+  </style>
  </head>
-<body>
-  <h1>Our Menu</h1>
-
-
-
-
-
-
-
+ <body>
+ 	<h1>Our Menu</h1>
+  <div class="layout">
+   <div class="col-lg-4 col-md-6">
+    <div class='card'>
+     <h2 class="Chiken">Chiken</h2>
+     <p>Границы и цвета: для каждого раздела должен быть установлен определенный цвет фона (по вашему выбору). Установите уникальный цвет фона каждой области заголовка раздела (по вашему выбору). Убедитесь, что цвет фона по-прежнему позволяет пользователю просматривать текст в области заголовка раздела и раздела.</p>
+    </div>
+   </div>
+   <div class="col-lg-4 col-md-6">
+    <div class='card'>
+     <h2 class="beef">Beef</h2>
+    
+     <p>Интервал: обратите внимание на интервал, показанный на иллюстрациях макета. Обратите внимание на расстояние между секциями (как по горизонтали, так и по вертикали). Обратите внимание на расстояние по горизонтали между краями раздела и краями окна браузера.</p>
+    </div>
+   </div>
+   <div class="col-lg-4 col-md-12">
+    <div class='card'>
+     <h2 class="Sushi">Sushi</h2>
+     <p>Макет: в мобильном представлении (равно или меньше 767 пикселей) каждый раздел должен занимать всю строку. Для визуальной ссылки на это представление см. Иллюстрацию мобильного макета ниже.</p>
+    </div>
+   </div>
+  </div>
 
 </body>
 </html>
