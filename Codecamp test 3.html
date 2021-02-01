@@ -41,27 +41,35 @@
   }
 
 .div1{
-display: flex;
+    display: flex;
      margin: 5px;
     flex-direction: row;
     font: bold 22px serif;
     justify-content: flex-start;
     font-color: black;
     margin-left: auto;
+    text-decoration: none;
+    color: inherit;
 }
 #con1{
      margin: 25px; 
       font-color: black;
-      font-style: black:;  
+      font-style: black:;
+      text-decoration: none;
+      color: inherit;  
 }
 
 #con2{
     margin: 25px;
     color: black;
+    text-decoration: none;
+    color: inherit;
 }
 #con3{
     margin: 25px;
     color: black;
+    text-decoration: none;
+    color: inherit;
     }
   .form-control {
        display: block;
@@ -212,6 +220,8 @@ display: flex;
     font-color: black;
     margin-right: 20px;
     display: inline;
+    text-decoration: none;
+    color: inherit;
 }
 .terms{
 text-align: right ;
@@ -230,9 +240,9 @@ margin-right: 70px;
   <div id="header">
 <div clss="logo"> <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" width="400" height="70"></div> 
     <div class="div1">
-    <div id="con1"><a href="#footer">Features</a></div>
-    <div id="con2"><a href="#footer">How it Works</a></div>
-    <div id="con3"><a href="#footer">Pricing</a></div>
+    <div id="con1"><a href="#footer">Features</div></a>
+    <div id="con2"><a href="#footer">How it Works</div></a>
+    <div id="con3"><a href="#footer">Pricing</div></a>
 </div>
 </div>
 </header>
@@ -321,11 +331,11 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
             </div>
     </div>
 
-    <footer><div class="footer">
+    <footer><div class="footer" id="footer">
        <div class="terms">
-    <div class="div2"a href="#video1">Privacy</a></div>
-    <div class="div2"a href="#video1">Terms</a></div>
-    <div class="div2" a href="#video1">Contact</a></div>
+    <div class="div2"><a href="#video1" >Privacy</a></div>
+    <div class="div2"><a href="#video1" >Terms</a></div>
+    <div class="div2"><a href="#video1" >Contact</a></div>
 </div>
 <div class="terms2">Copyright 2016, Original Trombones</div>
    </div></footer>
