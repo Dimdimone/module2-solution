@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Background</title>
+
+
+<style>
+	
+	* {
+  box-sizing: border-box;
+    }
+   body {
+    background-image:  url(https://image.freepik.com/free-photo/old-blue-wooden-board-beautiful-background_169016-3279.jpg);
+    overflow: auto;
+    color: white;
+   }
+  h1 {
+  	text-align: center;
+    font: bold 300% serif;
+    color: white;
+     }
+     h2
+     {
+   	 text-align: center;
+   	 color: white;
+     font-size: 20px;
+     font-style: normal; }
+   p{
+   	text-align: left;
+   	color: white;
+     font-size: 22px;
+     font-style: normal; ;
+   }
+   #box{
+   	background-color:  rgba(5, 140, 201, 0.9);
+    padding: 10px;
+    width: 600px;
+    height: 1700px;
+    margin-top: 50px;
+    overflow: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+   }
+   #name, #email, #age, #role1, #role {
+    text-align: left;
+    color: white;
+     font-size: 22px;
+     font-style: normal ;
+     }
+     label, span {
+     display: block;
+     font-size: 14px;
+     margin-bottom: 22px;
+   }
+     #comment{
+     	background-color: white;
+     	width: 575px;
+        height: 200px;
+        overflow: auto;
+        display: block;
+        font-size: 20px;
+        font-style: italic; ;
+     }
+    .form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+    .button{
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+     transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    }
+ 
+</style>
+</head>
+
+<body>
+ <header><h1>freeCodeCamp Survey Form</h1>
+ </header>
+ <div><h2>Thank you for taking the time to help us improve the platform</h2>
+ </div>
+ <div id="box">
+ 	<div id="conteiner">
+    <div id="name" >Name</div>
+     <label ><input type="text" name="name"  required placeholder="Enter your name" class="form-control"></label>
+    <div id="email" >Email</div>
+    <label><input type="text" name="Email" placeholder="Enter your Email" class="form-control"></label>
+    <div id="age">Age (optional)</div>
+    <label><input type="text" name="Age" placeholder="Age" class="form-control"></label> 
+     <div ><label id="role" for="current role" >Which option best describes your current role?</label></div>
+      <span><select name="current role"class="form-control"><option>Select current role</option></span>
+        <option value="student">Student</option> 
+        <option value="Full time job">Full time job</option> 
+        <option value="Full time learner">Full time learner</option>  
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>  
+      </select>  
+      <div class="select-arrow"></div>
+    </div> 
+
+
+
+
+    <div class="radio">
+      <span id="role" >Would you recommend freeCodeCamp to a friend?</span>
+      <label>
+        <div><input type="radio" name="choice" value="Definetely"><b id="role1">Definetely</b>
+        <div class="radio-control definetely"></div></div>
+      </label>
+      <label>
+        <input type="radio" name="choice" value="Maybe"><b id="role1">Maybe</b>
+        <div class="radio-control maybe"></div>
+      </label>
+      <label>
+        <div><input type="radio" name="choice" value=" not sure"><b id="role1">Not sure</b>
+        <div class="radio-control not sure"></div></div>
+      </label>
+      <div><span id="role">What is your favorite feature of freeCodeCamp?</span></div>
+      </div>
+      <span><select name="current option" class="form-control"><option>Select an option</option></span>
+        <option value="Chalenges">Chalenges</option> 
+        <option value="Projects">Projects</option> 
+        <option value="Community">Community</option>  
+        <option value="Open Sourse">Open Sourse</option> 
+      </select>  
+      <div class="select-arrow"></div>
+     
+     <div><span id="role">What would you like to see improved? (Check all that apply)</span>
+    <p><input type="checkbox" name="a" value="Front-end Projects"> Front-end Projects</p>
+   <p><input type="checkbox" name="a" value="Additional Courses"> Back-end Projects</p>
+   <p><input type="checkbox" name="a" value="Additional Courses"> Data Visualization</p>
+   <p><input type="checkbox" name="a" value="Challenges"> Challenges</p>
+   <p><input type="checkbox" name="a" value="Open Source Community"> Open Source Community</p>
+   <p><input type="checkbox" name="a" value="Gitter help rooms"> Gitter help rooms</p>
+   <p><input type="checkbox" name="a" value="Videos"> Videos</p>
+   <p><input type="checkbox" name="a" value="City Meetups"> City Meetups</p>
+   <p><input type="checkbox" name="a" value="Wiki"> Wiki</p>
+   <p><input type="checkbox" name="a" value="Forum"> Forum</p>
+   <p><input type="checkbox" name="a" value="Additional Courses"> Additional Courses</p>
+<div><span id="role">Any comments or suggestions?</span> 
+	<textarea id="comment" name="comment" placeholder="Enter your comment here..."></textarea></div>
+     </div>
+     <div><p><input type='submit' value='Submit' class='button' ></p></div>
+    </div>
+ </div>
+ 
+ </div>
+ 
+</body> 
+</html>
+
